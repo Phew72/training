@@ -1,12 +1,14 @@
 ﻿using System;
+using FizzBuzz.Library;
 
-namespace FizzBuzz
+namespace FizzBuzz.Cli
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var fizzBuzzService = new FizzBuzzService();
+            Console.WriteLine(fizzBuzzService.ToString());
         }
     }
 }
